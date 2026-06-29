@@ -1,0 +1,45 @@
+{
+  "name": "hlm-ai-seo",
+  "version": "1.0.0",
+  "description": "AI-readable website exports for LLMs and AI tools",
+  "author": "HLM Team",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://hlm.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hlm/ai-seo"
+  },
+  "scripts": {
+    "start": "npm run watch",
+    "watch": "wp-scripts start",
+    "build": "wp-scripts build",
+    "lint": "npm run lint:js && npm run lint:style",
+    "lint:js": "eslint . --ext .js --fix",
+    "lint:style": "stylelint '**/*.css' --fix",
+    "test": "wp-scripts test-unit-js",
+    "format": "prettier --write '**/*.{js,json,md}'",
+    "packages-update": "npm update"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^26.0.0",
+    "@wordpress/eslint-plugin": "^17.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0",
+    "stylelint": "^15.0.0",
+    "stylelint-config-wordpress": "^19.0.0"
+  },
+  "keywords": [
+    "wordpress",
+    "plugin",
+    "ai",
+    "seo",
+    "llms",
+    "export",
+    "markdown",
+    "rank-math"
+  ],
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}

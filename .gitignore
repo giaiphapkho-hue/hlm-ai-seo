@@ -1,25 +1,58 @@
-# CakePHP 3
+# PHP
+*.php~
+*.phar
+/vendor/
+composer.lock
 
-/vendor/*
-/config/app.php
+# WordPress
+wp-config.php
+wp-content/uploads/
+wp-content/backup-*
+wp-content/cache/
+wp-content/advanced-cache.php
 
-/tmp/cache/models/*
-!/tmp/cache/models/empty
-/tmp/cache/persistent/*
-!/tmp/cache/persistent/empty
-/tmp/cache/views/*
-!/tmp/cache/views/empty
-/tmp/sessions/*
-!/tmp/sessions/empty
-/tmp/tests/*
-!/tmp/tests/empty
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
 
-/logs/*
-!/logs/empty
+# Build artifacts
+/dist/
+/build/
+*.zip
+*.tar.gz
 
-# CakePHP 2
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
 
-/app/tmp/*
-/app/Config/core.php
-/app/Config/database.php
-/vendors/*
+# OS
+Thumbs.db
+.DS_Store
+
+# Testing
+.phpunit.result.cache
+coverage/
+.coverage
+
+# Logs
+*.log
+debug.log
+hlm-ai-seo-logs/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+
+# Code style
+.php-cs-fixer.cache
